@@ -1,0 +1,70 @@
+import 'package:call_of_duty/data/color.dart';
+import 'package:flutter/material.dart';
+class BattlePassProgress extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    return Container(
+      width: size.width*.8,
+      height: size.height*.05,
+      child: Stack(alignment: Alignment.center,
+        children: [
+          Container(width: size.width,
+          height: size.height*.008,
+            color: mainColor,
+          ),
+          Positioned(left: size.width*.08,
+            child: Container(width: size.width*.02,
+             height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("16"),),
+            ),
+          ),
+          Positioned(left: size.width*.21,
+            child: Container(width: size.width*.02,
+              height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("17"),),
+            ),
+          ),
+          Positioned(left: size.width*.32,
+            child: Container(width: size.width*.02,
+              height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("18"),),
+            ),
+          ),
+          Positioned(left: size.width*.43,
+            child: Container(width: size.width*.02,
+              height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("19"),),
+            ),
+          ),
+          Positioned(left: size.width*.55,
+            child: Container(width: size.width*.02,
+              height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("20"),),
+            ),
+          ),
+          Positioned(left: size.width*.65,
+            child: Container(width: size.width*.02,
+              height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("21"),),
+            ),
+          ),
+          Positioned(left: size.width*.78,
+            child: Container(width: size.width*.02,
+              height: size.width*.02,
+              color: mainColor,
+              child: Center(child: Text("22"),),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
